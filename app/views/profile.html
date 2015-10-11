@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-sm-12">
+    <ng-include src="'getUser.html'"></ng-include>
+  </div>
+</div>
+
+<div class="row user-row">
+  <div class="col-sm-12">
+    <div class="thumbnail">
+      <img ng-src="{{profile.data.avatar}}" alt="Avatar's {{profile.data.name}}">
+      <div class="caption">
+        <h3 ng-if="profile.data.name">{{profile.data.name}}</h3>
+        <p ng-if="profile.data.id"><strong>ID:</strong>{{profile.data.id}}</p>
+        <p ng-if="profile.data.email"><strong>Email:</strong>{{profile.data.email}}</p>
+      </div>
+    </div>
+  </div>
+</div>
