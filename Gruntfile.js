@@ -143,7 +143,7 @@ module.exports = function (grunt) {
     clean: {
       dist: {
         files: [{
-          //dot: true,
+          dot: true,
           src: [
             '.tmp',
             '<%= yeoman.dist %>/{,*/}*',
